@@ -420,7 +420,7 @@ img {
     padding: 30px 30px;
 }
 
-
+/* fill="#2196f3" style="fill: var(--color1, #2196f3)" */
 .box-nav .list-item+.list-item {
     margin-left: 50px;
 }
@@ -430,7 +430,7 @@ img {
 }
 
 /* Изображения */
-.address-link .mail {
+.address-link .icon-mail {
     display: inline-block;
     width: 16px;
     height: 12px;
@@ -447,10 +447,10 @@ img {
     margin-right: 10px;
     background-size: contain;
     background-position: center;
-    color: currentColor;
+    color: var(--text-color);
 }
 
 .address-link .phone:hover,
-.mail:hover {
+.icon-mail:hover {
     color: var(--accent-color);
 }
