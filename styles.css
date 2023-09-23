@@ -52,7 +52,8 @@ img {
 
 /* Заголовки */
 .work-title,
-.team-title {
+.team-title,
+.clients-title {
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
@@ -69,6 +70,20 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 10px;
+}
+
+.socialmedia-title {
+    display: block;
+    color: var(--accent-text-color);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    width: 230px;
 }
 
 /* Списки */
@@ -204,6 +219,7 @@ img {
 
 .logo-footer {
     display: block;
+    align-items: baseline;
     margin-bottom: 20px;
     font-family: Raleway;
     font-size: 26px;
@@ -228,7 +244,7 @@ img {
 }
 
 .address-link {
-    display: block;
+    display: inline-flex;
     align-items: center;
     color: var(--text-color);
     font-size: 14px;
@@ -255,6 +271,14 @@ img {
 .footer {
     background-color: var(--background-color);
     padding: 60px 0px;
+
+    /* justify-items: baseline; */
+}
+
+.footer-box {
+    display: flex;
+    align-items: baseline;
+    justify-items: flex-start;
 }
 
 .footer-item {
@@ -273,6 +297,7 @@ img {
 }
 
 .address-text {
+    display: block;
     color: var(--accent-text-color);
     font-size: 14px;
     line-height: 1.71;
@@ -349,6 +374,13 @@ img {
     flex-shrink: 0;
     margin-top: 30px;
     margin-left: 30px;
+}
+
+.card-portfolio:hover,
+.card-portfolio:focus {
+    border: 1px solid #EEE;
+    background: #FFF;
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
 .card-content {
@@ -429,28 +461,148 @@ img {
     margin-left: 93px;
 }
 
-/* Изображения */
-.address-link .icon-mail {
+.socialmedia-footer {
     display: inline-block;
+    margin: 0px 0px 0px 70px;
+    width: 230px;
+    /* padding: 12px 0px 40px 0px; */
+}
+
+
+.address-footer {
+    display: inline-block;
+    width: 230px;
+    margin: 0px 0px;
+}
+
+/* Изображения */
+.address-link .mail {
     width: 16px;
     height: 12px;
     margin-right: 10px;
     background-size: contain;
     background-position: center;
-    color: currentColor;
+    fill: currentColor;
 }
 
 .address-link .phone {
-    display: inline-block;
-    width: 16px;
-    height: 12px;
+    width: 10px;
+    height: 16px;
     margin-right: 10px;
     background-size: contain;
-    background-position: center;
-    color: var(--text-color);
+    fill: currentColor;
 }
 
-.address-link .phone:hover,
-.icon-mail:hover {
-    color: var(--accent-color);
+.box-icons {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    justify-content: center;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.antenna,
+.clock,
+.diagram,
+.astronaut {
+    display: block;
+    align-self: center;
+    width: 70px;
+    height: 70px;
+
+}
+
+.social-icons {
+    display: inline-flex;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin: 16px 0px 0px 0px;
+}
+
+.social-icons:hover,
+.social-icons:focus {
+    background-color: var(--accent-color);
+
+}
+
+.social-logo {
+    display: inline-flex;
+    align-self: center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
+}
+
+.social-list+.social-list {
+    margin-left: 10px;
+}
+
+
+.social-logo:hover,
+.social-logo:focus {
+    fill: var(--accent-text-color);
+}
+
+.clients-icon {
+    display: inline-flex;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+    border: 1px solid #AFB1B8;
+}
+
+.clients-list+.clients-list {
+    margin-left: 30px;
+}
+
+.client-logo {
+    display: inline-flex;
+    align-self: center;
+    width: 106px;
+    height: 60px;
+    fill: #AFB1B8;
+}
+
+.clients-list:hover,
+.clients-list:focus {
+    border: 1px solid var(--accent-color);
+}
+
+.client-logo:hover,
+.client-logo:focus {
+    fill: var(--accent-color);
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.10);
+}
+
+.footer-icon {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    width: 20px;
+    height: 20px;
+    fill: var(--accent-text-color);
+}
+
+.footer-social:hover,
+.footer-social:focus {
+    background-color: var(--accent-color);
+}
+
+.footer-social+.footer-social {
+    margin-left: 10px;
 }
