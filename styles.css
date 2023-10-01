@@ -521,6 +521,10 @@ img {
     margin: 16px 0px 0px 0px;
 }
 
+.social-item+.social-item {
+    margin-left: 10px;
+}
+
 .social-icons {
     display: inline-flex;
     justify-content: center;
@@ -544,9 +548,7 @@ img {
     height: 20px;
 }
 
-.social-list+.social-list {
-    margin-left: 10px;
-}
+
 
 
 .clients-icon {
